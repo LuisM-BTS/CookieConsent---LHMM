@@ -1,0 +1,18 @@
+<button type="button" data-cc="show-preferencesModal">
+  Manage cookie preferences
+</button>
+
+<div id="btsModal" style="display:block;">
+  <h2>BTS Modal</h2>
+  <p>Datos del usuario: {{ combinedData?.data1 | json }}</p>
+  <p>Datos adicionales: {{ combinedData?.data2 | json }}</p>
+
+  <!-- Contenedor del código QR -->
+  <canvas #qrcode></canvas>
+
+  <button (click)="closeBTSModal()">Cerrar</button>
+</div>
+
+
+
+
